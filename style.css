@@ -1,0 +1,288 @@
+body{
+    margin : 0px;
+    padding: 0px;
+    background-image: url(stars.jpg);
+    background-size: 100%;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-family: system-ui,'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 50px;
+}
+
+.soleil{
+    height: 120px;
+    width: 120px;
+    background-image: url(soleil.jpg);
+    background-size: cover;
+    /*Placer*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /*Changer le point de position*/
+    transform: translate(-50%, -50%); 
+    /*Rayonnement*/
+    border-radius: 50%;
+    box-shadow: -4px 2px 150px #f9c05f;
+}
+
+
+p{
+    color: white;
+    font-family: system-ui,'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    left: -52px;
+    top: -7px;
+}
+
+
+.mercure-orbite, .venus-orbite, .terre-orbite, .mars-orbite, .jupiter-orbite, .saturne-orbite, .uranus-orbite, .neptune-orbite{
+    border-radius: 50%;
+    border: 1px dotted #ddd9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ----------------------------- Mercure ------------------------------ */
+
+.mercure{
+    height: 20px;
+    width: 20px;
+    background: #c36d30d8;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: -4px 2px 150px #f9c05f;
+    left: 43%;
+    top: 42%;
+    transform: translate(-50%, -50%);
+    animation: orbit2 2s linear infinite;
+}
+
+@keyframes orbit2{
+    from{transform:rotate(0deg)translateX(70px) rotate(0deg);}
+    to{transform:rotate(360deg)translateX(70px) rotate(-360deg);}
+}
+
+
+.mercure-orbite{
+    height: 140px;
+    width: 140px;
+}
+
+
+/* ----------------------------- Venus ------------------------------ */
+.venus{
+    height: 45px;
+    width: 45px;
+    background-image: url(venus.png);
+    background-size: 100%;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: -4px 2px 150px #c1aa81;
+    left: 39%;
+    top: 41%;
+    transform: translate(-50%, -50%);
+    animation: orbit3 10s linear infinite;
+}
+
+@keyframes orbit3{
+    from{transform:rotate(0deg)translateX(100px) rotate(0deg);}
+    to{transform:rotate(360deg)translateX(100px) rotate(-360deg);}
+}
+
+.venus-orbite{
+    height: 200px;
+    width: 200px;
+}
+
+/* ----------------------------- Terre ------------------------------ */
+
+.terre{
+    height: 45px;
+    width: 45px;
+    background-image: url(terre.png);
+    background-size: 100%;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: -4px 2px 150px #2855d6;
+    left: 42%;
+    top: 43.3%;
+    transform: translate(-50%, -50%);
+    animation: orbit4 20s linear infinite;
+}
+
+@keyframes orbit4{
+    from{transform:rotate(0deg)translateX(150px) rotate(0deg);}
+    to{transform:rotate(360deg)translateX(150px) rotate(-360deg);}
+}
+
+.terre-orbite{
+    height: 300px;
+    width: 300px;
+}
+
+/* ----------------------------- Lune ------------------------------ */
+
+
+.lune-orbite{
+    height: 55px;
+    width: 55px;
+    border: 1px dotted #fff;
+    position: relative;
+    left: -6px;
+    top: -8px;
+    border-radius: 40px;
+}
+
+.lune{
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 40%;
+    top: 42%;
+    animation: orbit5 1.71s linear infinite;
+}
+
+@keyframes orbit5{
+    from{transform:rotate(0deg)translateX(27px) rotate(0deg);}
+    to{transform:rotate(360deg)translateX(27px) rotate(-360deg);}
+}
+
+
+/* ----------------------------- Mars ------------------------------ */
+
+.mars{
+    height:30px;
+    width: 30px;
+    background-image: url(mars.png);
+    background-size: 100%;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: -4px 2px 150px #c5372d;
+    left: 46.5%;
+    top: 46.5%;
+    transform: translate(-50%, -50%);
+    animation: orbit6 30s linear infinite;
+}
+
+@keyframes orbit6{
+    from{transform:rotate(0deg)translateX(185px) rotate(0deg);}
+    to{transform:rotate(360deg)translateX(185px) rotate(-360deg);}
+}
+
+.mars-orbite{
+    height: 370px;
+    width: 370px;
+}
+
+
+/* ----------------------------- Jupiter ------------------------------ */
+
+.jupiter{
+    height:40px;
+    width: 40px;
+    background-image: url(jupiter.png);
+    background-size: 100%;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: -4px 2px 150px #cac2b9;
+    left: 45%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    animation: orbit7 60s linear infinite;
+}
+
+@keyframes orbit7{
+    from{transform:rotate(0deg)translateX(217px) rotate(0deg);}
+    to{transform:rotate(360deg)translateX(217px) rotate(-360deg);}
+}
+
+.jupiter-orbite{
+    height: 430px;
+    width: 430px;
+}
+
+/* ----------------------------- Saturne ------------------------------ */
+
+.saturne{
+    height:50px;
+    width: 50px;
+    background-image: url(saturne.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 50%;
+    position: absolute;
+    left: 45%;
+    top: 47.5%;
+    transform: translate(-50%, -50%);
+    animation: orbit8 90s linear infinite;
+}
+
+@keyframes orbit8{
+    from{transform:rotate(0deg)translateX(250px) rotate(0deg);}
+    to{transform:rotate(360deg)translateX(250px) rotate(-360deg);}
+}
+
+.saturne-orbite{
+    height: 500px;
+    width: 500px;
+}
+
+/* ----------------------------- Uranus ------------------------------ */
+
+.uranus{
+    height:30px;
+    width: 30px;
+    background-image: url(uranus.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 50%;
+    position: absolute;
+    left: 48%;
+    top: 48%;
+    transform: translate(-50%, -50%);
+    animation: orbit9 200s linear infinite;
+}
+
+@keyframes orbit9{
+    from{transform:rotate(0deg)translateX(280px) rotate(0deg);}
+    to{transform:rotate(360deg)translateX(280px) rotate(-360deg);}
+}
+
+.uranus-orbite{
+    height: 560px;
+    width: 560px;
+}
+
+/* ----------------------------- Neptune ------------------------------ */
+
+.neptune{
+    height:30px;
+    width: 30px;
+    background-image: url(neptune.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 50%;
+    position: absolute;
+    left: 48%;
+    top: 48%;
+    transform: translate(-50%, -50%);
+    animation: orbit10 400s linear infinite;
+}
+
+@keyframes orbit10{
+    from{transform:rotate(0deg)translateX(310px) rotate(0deg);}
+    to{transform:rotate(360deg)translateX(310px) rotate(-360deg);}
+}
+
+.neptune-orbite{
+    height: 620px;
+    width: 620px;
+}
